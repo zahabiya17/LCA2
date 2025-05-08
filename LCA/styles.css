@@ -1,0 +1,1221 @@
+/* Base styles and reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family:
+      "Manrope",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #171a1f;
+    background-color: #ffffff;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  /* Homepage container */
+  .homepage {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 6px rgba(18, 15, 40, 0.12);
+    overflow: hidden;
+  }
+  
+  /* Hero section */
+  .hero-section {
+    background-color: #093931;
+    position: relative;
+    min-height: 821px;
+    width: 100%;
+    padding-bottom: 139px;
+    overflow: hidden;
+  }
+  
+  .hero-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .top-navigation {
+    position: relative;
+    background-color: rgba(9, 57, 49, 1);
+    display: flex;
+    width: 100%;
+    padding: 8px 64px;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .brand-name {
+    color: #f5d38e;
+    font-size: 30px;
+    font-family:
+      "Cormorant Garamond",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 700;
+    line-height: 2;
+  }
+  
+  .nav-container {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    gap: 23px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 2;
+    flex-wrap: wrap;
+  }
+  
+  .main-navigation {
+    align-self: stretch;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .nav-item {
+    border-radius: 4px;
+    padding: 11px 18px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .nav-item.active {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: stretch;
+    color: #f2c66d;
+    font-weight: 700;
+  }
+  
+  .nav-link {
+    display: block;
+  }
+  
+  .active .nav-link {
+    align-self: center;
+  }
+  
+  .active-indicator {
+    border-radius: 2px;
+    background-color: #f2c66d;
+    display: flex;
+    margin-top: 7px;
+    flex-shrink: 0;
+    height: 4px;
+  }
+  
+  .utility-icons {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+  
+  .utility-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 20px;
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    position: relative;
+    align-self: center;
+    margin-top: 77px;
+    margin-bottom: -28px;
+    width: 100%;
+    max-width: 1160px;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-text-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 50%;
+  }
+  
+  .hero-text-container {
+    position: relative;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: stretch;
+    font-weight: 400;
+  }
+  
+  .hero-heading {
+    color: #f5d38e;
+    font-size: 72px;
+    font-family:
+      "Cormorant Garamond",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    line-height: 94px;
+    font-weight: 400;
+  }
+  
+  .hero-image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  
+  .hero-product-image {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 8px;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  /* Button styles */
+  .btn {
+    display: inline-block;
+    border-radius: 26px;
+    padding: 12px 60px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .btn-outline-light {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    align-self: flex-start;
+    margin-top: 24px;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .btn-outline-primary {
+    background-color: transparent;
+    border: 1px solid #0d554a;
+    color: #0d554a;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #0d554a;
+    color: white;
+  }
+  
+  .btn-primary {
+    background-color: #f2c66d;
+    border: 1px solid transparent;
+    color: #6b4a09;
+    border-radius: 0 18px 18px 0;
+    padding: 0px 15px;
+    white-space: nowrap;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e5b85a;
+  }
+  
+  .centered-btn {
+    align-self: center;
+    margin-top: 36px;
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  /* Features section */
+  .features-section {
+    background-color: #ffffff;
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    padding: 36px 70px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .features-container {
+    width: 100%;
+    max-width: 1066px;
+  }
+  
+  .features-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33.33%;
+  }
+  
+  .feature-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 62px;
+    overflow: hidden;
+  }
+  
+  .feature-title {
+    color: #171a1f;
+    font-size: 18px;
+    font-family:
+      "Cormorant Garamond",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 600;
+    line-height: 2;
+    margin-top: 18px;
+  }
+  
+  .feature-description {
+    color: #90959f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    align-self: stretch;
+  }
+  
+  /* Featured Products section */
+  .featured-products-section {
+    background-color: #ffffff;
+    margin-top: 24px;
+    width: 100%;
+    padding: 48px 80px;
+  }
+  
+  .featured-products-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .featured-products-intro {
+    display: flex;
+    margin-top: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #0d554a;
+    font-weight: 400;
+    width: 21%;
+  }
+  
+  .section-heading {
+    font-size: 40px;
+    font-family:
+      "Cormorant Garamond",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 600;
+    line-height: 56px;
+  }
+  
+  .section-description {
+    color: #90959f;
+    font-size: 16px;
+    line-height: 26px;
+    align-self: stretch;
+    margin-top: 12px;
+  }
+  
+  .products-grid {
+    display: flex;
+    flex-grow: 1;
+    align-items: stretch;
+    gap: 20px;
+    color: #171a1f;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 79%;
+    margin-left: 20px;
+  }
+  
+  .product-card {
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12);
+    padding-bottom: 18px;
+    overflow: hidden;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+  }
+  
+  .product-image {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .product-info {
+    display: flex;
+    margin-top: 12px;
+    padding-left: 12px;
+    padding-right: 55px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .product-title {
+    font-size: 24px;
+    font-family:
+      "Cormorant Garamond",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 700;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    z-index: 10;
+  }
+  
+  /* Collections section */
+  .collections-section {
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    padding: 48px 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .collections-container {
+    display: flex;
+    width: 100%;
+    max-width: 1179px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .centered {
+    text-align: center;
+    align-self: center;
+    color: #0d554a;
+  }
+  
+  .collections-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 4px;
+  }
+  
+  .collections-row:first-of-type {
+    margin-top: 46px;
+  }
+  
+  .collection-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 33.33%;
+  }
+  
+  .collection-content {
+    border-radius: 8px;
+    background-color: #90959f;
+    box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12);
+    display: flex;
+    margin-top: 36px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    font-family:
+      "Cormorant Garamond",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    aspect-ratio: 1;
+    width: 100%;
+    position: relative;
+  }
+  
+  .collection-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .collection-title {
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    padding: 24px;
+    font-weight: 400;
+  }
+  
+  /* Jewelry Selection section */
+  .jewelry-selection-section {
+    background-color: #fafafb;
+    margin-top: 24px;
+    width: 100%;
+    padding: 72px 80px;
+  }
+  
+  .jewelry-selection-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .jewelry-selection-intro {
+    display: flex;
+    margin-top: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #0d554a;
+    font-weight: 400;
+    width: 21%;
+  }
+  
+  /* Story section */
+  .story-section {
+    background-color: #fafafb;
+    display: flex;
+    width: 100%;
+    padding: 60px 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .story-container {
+    display: flex;
+    width: 100%;
+    max-width: 1176px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .story-image-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    min-height: 368px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 158px 80px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .story-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .story-play-button {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 52px;
+    border-radius: 26px;
+    margin-bottom: -32px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  /* Testimonials section */
+  .testimonials-section {
+    background-color: #093931;
+    display: flex;
+    width: 100%;
+    padding: 61px 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimonials-container {
+    width: 100%;
+    max-width: 1176px;
+  }
+  
+  .testimonials-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .testimonials-intro {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: stretch;
+    color: #ffffff;
+    width: 31%;
+  }
+  
+  .testimonials-heading {
+    font-size: 48px;
+    font-family:
+      "Cormorant Garamond",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 600;
+    line-height: 1;
+  }
+  
+  .testimonials-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    align-self: flex-start;
+    margin-top: 12px;
+  }
+  
+  .testimonials-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    width: 69%;
+    margin-left: 20px;
+  }
+  
+  .testimonial-card {
+    border-radius: 8px;
+    background-color: rgba(23, 26, 31, 0.3);
+    padding-right: 36px;
+    overflow: hidden;
+  }
+  
+  .testimonial-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .testimonial-image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 50%;
+  }
+  
+  .testimonial-image {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  
+  .testimonial-text-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: flex-start;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  
+  .testimonial-text {
+    line-height: 26px;
+    align-self: stretch;
+  }
+  
+  .testimonial-author {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 18px;
+  }
+  
+  .testimonial-location {
+    line-height: 2;
+  }
+  
+  .testimonial-navigation {
+    align-self: flex-end;
+    z-index: 10;
+    display: flex;
+    margin-top: -26px;
+    margin-right: 36px;
+    align-items: stretch;
+    gap: 18px;
+  }
+  
+  .testimonial-nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .nav-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 52px;
+    border-radius: 26px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .nav-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  .site-footer {
+    background-color: #093931;
+    display: flex;
+    width: 100%;
+    padding: 48px 80px 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-container {
+    width: 100%;
+    max-width: 1176px;
+  }
+  
+  .footer-top {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    gap: 20px;
+    font-weight: 400;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-nav-section {
+    align-self: flex-start;
+    display: flex;
+    align-items: stretch;
+    gap: 40px 100px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 2;
+    flex-wrap: wrap;
+  }
+  
+  .footer-brand {
+    color: #f5d38e;
+    font-size: 30px;
+    font-family:
+      "Cormorant Garamond",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 700;
+    line-height: 2;
+    align-self: flex-start;
+  }
+  
+  .footer-nav {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .footer-links-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    white-space: nowrap;
+  }
+  
+  .footer-link {
+    margin-top: 12px;
+  }
+  
+  .footer-link:first-child {
+    margin-top: 0;
+  }
+  
+  .newsletter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .newsletter-heading {
+    color: #ffffff;
+    font-size: 20px;
+    font-family:
+      "Cormorant Garamond",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 400;
+  }
+  
+  .newsletter-description {
+    color: #fafafb;
+    font-size: 12px;
+    line-height: 2;
+  }
+  
+  .newsletter-form {
+    align-self: stretch;
+    display: flex;
+    margin-top: 15px;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .input-with-icon {
+    border-radius: 18px 0 0 18px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    display: flex;
+    padding: 7px 12px;
+    align-items:stretch;
+    gap: 6px;
+    color: #ffffff;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+  
+  .input-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  
+  .newsletter-input {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    flex-basis: auto;
+    width: 100%;
+  }
+  
+  .newsletter-input::placeholder {
+    color: #ffffff;
+    opacity: 0.7;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    margin-top: 36px;
+    width: 100%;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .copyright {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+  }
+  
+  .social-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 991px) {
+    .top-navigation {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .nav-container {
+      max-width: 100%;
+    }
+  
+    .main-navigation {
+      max-width: 100%;
+    }
+  
+    .nav-item {
+      white-space: initial;
+    }
+  
+    .frame-4 {
+      padding-right: 20px;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+      margin-bottom: 10px;
+      margin-top: 40px;
+      flex-direction: column;
+    }
+  
+    .hero-text-column,
+    .hero-image-column {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .hero-text-container {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .hero-heading {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 58px;
+    }
+  
+    .btn {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .hero-product-image {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .hero-section {
+      max-width: 100%;
+      padding-bottom: 100px;
+    }
+  
+    .features-section {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .features-container {
+      max-width: 100%;
+    }
+  
+    .features-grid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .feature-card {
+      width: 100%;
+      margin-top: 40px;
+    }
+  
+    .featured-products-section {
+      max-width: 100%;
+      padding-left: 20px;
+    }
+  
+    .featured-products-grid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .featured-products-intro {
+      width: 100%;
+      margin-top: 40px;
+    }
+  
+    .products-grid {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 40px;
+    }
+  
+    .product-info {
+      padding-right: 20px;
+    }
+  
+    .collections-section {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .collections-container {
+      max-width: 100%;
+    }
+  
+    .collections-row {
+      max-width: 100%;
+      margin-top: 40px;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .collection-card {
+      width: 100%;
+    }
+  
+    .collection-content {
+      margin-top: 40px;
+      padding-top: 100px;
+    }
+  
+    .collection-title {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .jewelry-selection-section {
+      max-width: 100%;
+      padding-left: 20px;
+    }
+  
+    .jewelry-selection-grid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .jewelry-selection-intro {
+      width: 100%;
+      margin-top: 40px;
+    }
+  
+    .story-section {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .story-container {
+      max-width: 100%;
+    }
+  
+    .story-image-container {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  
+    .story-play-button {
+      margin-bottom: 10px;
+    }
+  
+    .testimonials-section {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .testimonials-container {
+      max-width: 100%;
+    }
+  
+    .testimonials-grid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .testimonials-intro {
+      width: 100%;
+      margin-top: 40px;
+    }
+  
+    .testimonials-heading {
+      font-size: 40px;
+    }
+  
+    .testimonials-content {
+      max-width: 100%;
+      margin-top: 40px;
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .testimonial-card {
+      max-width: 100%;
+      padding-right: 20px;
+    }
+  
+    .testimonial-grid {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  
+    .testimonial-image {
+      margin-top: 36px;
+    }
+  
+    .testimonial-text-column {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .testimonial-content {
+      margin-top: 40px;
+    }
+  
+    .testimonial-navigation {
+      margin-right: 10px;
+    }
+  
+    .site-footer {
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .footer-container {
+      max-width: 100%;
+    }
+  
+    .footer-top {
+      max-width: 100%;
+    }
+  
+    .footer-nav-section {
+      max-width: 100%;
+    }
+  
+    .footer-links-column {
+      white-space: initial;
+    }
+  
+    .btn-primary {
+      padding-left: 20px;
+      padding-right: 20px;
+      white-space: initial;
+    }
+  
+    .footer-bottom {
+      max-width: 100%;
+    }
+  }
+  
